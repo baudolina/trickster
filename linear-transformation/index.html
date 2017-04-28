@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Rotation Demo</title>
+    <script src="./three.min.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <style>
+      body { margin: 0; }
+      canvas { width: 100%; height: 100%; }
+      #control-board {
+        margin: 20px;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="control-board">
+      <label><input id="translation" name="Transforms" type="radio" checked="true" value="1"/>Translation</label>
+      <label><input id="rotation" name="Transforms" type="radio" value="2"/>Rotation</label><br /><br />
+      <label>Speed:</label>
+      <label><input id="speed" name="Transforms" type="text" value="7" style="margin-left: 20px;width: 80px;"/></label><br /><br />
+      <label><input id="confirm" name="Transforms" type="button" value="Confirm"/></label>
+    </div>
+  </body>
+</html>
